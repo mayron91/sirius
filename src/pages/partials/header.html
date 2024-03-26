@@ -1,12 +1,31 @@
 <header class="header">
     <div class="container">
+        <div class="header_container">
         <a href="/" class="logo">
-            <img src="img/logo.svg" alt="" class="logo__img">
+            <img src="img/logo.png" alt="" class="logo__img">
         </a>
 
         <div class="header__contacts">
-            <a href="tel:{{ vars.phone | toTel }}" class="phone">{{ vars.phone }}</a> <br>
-            <a href="tel:" class="phone">{{ vars.email }}</a>
+            <a href="">О компании</a>
+            <a href="">Продукция</a>
+            <a href="">Проекты</a>
+            <a href="">Контакты</a>
+        </div>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+              <a>Меню</a>
+            </label>
+        
+            <ul class="menu__box">
+              <li><a class="menu__item" href="#">Главная</a></li>
+                    <li><a class="menu__item" href="#">О компании</a></li>
+                    <li><a class="menu__item" href="#">Продукция</a></li>
+                    <li><a class="menu__item" href="#">Проекты</a></li>
+                    <li><a class="menu__item" href="#">Контакты</a></li>
+            </ul>
+          </div>
         </div>
     </div>
 </header>

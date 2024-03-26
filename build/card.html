@@ -19,10 +19,12 @@
 <meta property="og:description" content="">
 <meta property="og:url" content="">
 
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 <link rel="stylesheet" href="css/main.css">
 <link rel="shortcut icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
 </head>
 <body class="">
@@ -30,13 +32,32 @@
     <div class="site-wrapper" id="vue-app">
         <header class="header">
     <div class="container">
+        <div class="header_container">
         <a href="/" class="logo">
-            <img src="img/logo.svg" alt="" class="logo__img">
+            <img src="img/logo.png" alt="" class="logo__img">
         </a>
 
         <div class="header__contacts">
-            <a href="tel:+79206267796" class="phone">+7 920 626-77-96</a> <br>
-            <a href="tel:" class="phone">moseikin@gmail.com</a>
+            <a href="">О компании</a>
+            <a href="">Продукция</a>
+            <a href="">Проекты</a>
+            <a href="">Контакты</a>
+        </div>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+              <a>Меню</a>
+            </label>
+
+            <ul class="menu__box">
+              <li><a class="menu__item" href="#">Главная</a></li>
+                    <li><a class="menu__item" href="#">О компании</a></li>
+                    <li><a class="menu__item" href="#">Продукция</a></li>
+                    <li><a class="menu__item" href="#">Проекты</a></li>
+                    <li><a class="menu__item" href="#">Контакты</a></li>
+            </ul>
+          </div>
         </div>
     </div>
 </header>
@@ -45,7 +66,23 @@
 
         <footer class="footer">
     <div class="container">
-        <p></p>
+        <div class="footer_container">
+            <div class="copyright">
+                <p>© 2018 ООО «СИРИУС-МК»</p>
+                <p>Энергия свершений</p>
+            </div>
+            <div class="footer_wrapper">
+                <div class="footer_contacts">
+                    <p>8 812 330-10-23</p>
+                    <p>info@s-mk.spb.ru</p>
+                </div>
+                <div class="footer_addr">
+                    <p>198 152, Санкт-Петербург</p>
+                    <p>ул. Автовская, д. 16, литер А</p>
+                    <p>пом. 5Н, 4 этаж, каб. 415</p>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
     </div>

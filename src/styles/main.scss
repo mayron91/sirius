@@ -3,24 +3,15 @@
 
 @import './breakpoints.scss';
 @import './mixins.scss';
-@import './blocks/404.scss';
-@import './blocks/about_us.scss';
-@import './blocks/buttons.scss';
-@import './blocks/card.scss';
-@import './blocks/catalog.scss';
-@import './blocks/contact_us.scss';
-@import './blocks/index.scss';
-@import './blocks/politics.scss';
-@import './blocks/print.scss';
-@import './blocks/projects.scss';
+
 
 
 // ------------------------------------
 //      V A R I A B L E S
 // ------------------------------------
 
-$font-family: 'Fira Sans', sans-serif;
-$font-color: #000;
+$font-family: "Roboto Mono", sans-serif;
+$font-color: #fff;
 $base-transition: all 230ms ease;
 
 * {
@@ -31,6 +22,7 @@ $base-transition: all 230ms ease;
 html, body {
     font-family: $font-family;
     color: $font-color;
+    background-color: #1B1B1B;
     font-size: 16PX;
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
@@ -55,7 +47,7 @@ html, body {
 
 .container {
     width: 100%;
-    padding: 0 40px;
+    padding: 0 20px;
     margin: 0 auto;
     transition: $base-transition;
     @include respond-to('medium') {
@@ -73,10 +65,18 @@ html, body {
 @import './blocks/icons.scss';
 @import './blocks/header.scss';
 @import './blocks/footer.scss';
-
+@import './blocks/404.scss';
+@import './blocks/about_us.scss';
+@import './blocks/card.scss';
+@import './blocks/catalog.scss';
+@import './blocks/contact_us.scss';
+@import './blocks/index.scss';
+@import './blocks/politics.scss';
+@import './blocks/print.scss';
+@import './blocks/projects.scss';
 .logo {
     display: block;
-    max-width: 150px;
+    max-width: 200px;
     &__img {
         width: 100%;
     }
