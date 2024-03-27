@@ -386,6 +386,18 @@ html,body{font-family:"Roboto Mono",sans-serif;color:#fff;background-color:#1B1B
 
 .footer_addr{margin-left:115px;margin-left:7.1875rem}
 
+.swiper{margin-top:60px;margin-top:3.75rem;width:100%;height:680px;height:42.5rem}
+
+.swiper-pagination{width:100% !important}
+
+.swiper-pagination-bullet{background-color:#323232 !important;width:19% !important;border-radius:0 !important;height:3px !important;height:0.1875rem !important;z-index:0}
+
+.swiper-pagination-bullet-active{width:19% !important;height:3px !important;height:0.1875rem !important;position:relative;overflow:hidden;z-index:-1}
+
+.swiper-pagination-bullet-active::before{position:absolute;content:'';top:0;right:0;bottom:0;left:0;height:1px;height:0.0625rem;will-change:transform;animation:6s progress ease infinite;z-index:50;background-color:#fff !important}
+
+@keyframes progress{0%{width:0}100%{width:100%}}
+
 .logo{display:block;max-width:200px;max-width:12.5rem;z-index:50}
 
 .logo__img{width:100%}
