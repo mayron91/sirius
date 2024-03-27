@@ -101,10 +101,11 @@ margin-left: 35PX;
       }
       
       .menu__box {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         position: fixed;
         visibility: hidden;
-        top: 0;
         left: -100%;
       
         width: 100%;
@@ -116,23 +117,24 @@ margin-left: 35PX;
         list-style: none;
       
         background-color: #1b1b1b;
-        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
       
         transition-duration: .25s;
       }
-      
+      .header_mob_tel {
+        margin-top: 60px;
+      }
       .menu__item {
         display: block;
-        padding: 12px 24px;
+        padding: 20PX 24px;
       
         color: #00a3c7;
       
-        font-family: 'Roboto', sans-serif;
-        font-size: 20px;
-        font-weight: 600;
-      
+        font-weight: 400;
+font-size: 16px;
+line-height: 130%;
+letter-spacing: 0.1em;
+text-transform: uppercase;
         text-decoration: none;
-      
         transition-duration: .25s;
       }
       .menu__item:hover {

@@ -26,7 +26,7 @@ eval("/*!\n * dist/inputmask\n * https://github.com/RobinHerbots/Inputmask\n * C
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_functions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils/functions */ \"./src/js/utils/functions.js\");\n\n\n\ndocument.addEventListener('DOMContentLoaded', function(){\n    $('form').parsley();\n    (0,_utils_functions__WEBPACK_IMPORTED_MODULE_0__.initPhoneMask)();\n});\n\n\n//# sourceURL=webpack://frontendkit/./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_functions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils/functions */ \"./src/js/utils/functions.js\");\n\r\n\r\n\r\ndocument.addEventListener('DOMContentLoaded', function(){\r\n    $('form').parsley();\r\n    (0,_utils_functions__WEBPACK_IMPORTED_MODULE_0__.initPhoneMask)();\r\n});\r\n\n\n//# sourceURL=webpack://frontendkit/./src/js/main.js?");
 
 /***/ }),
 
@@ -37,7 +37,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _uti
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"initPhoneMask\": () => (/* binding */ initPhoneMask)\n/* harmony export */ });\n/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! inputmask */ \"./node_modules/inputmask/dist/inputmask.js\");\n/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(inputmask__WEBPACK_IMPORTED_MODULE_0__);\n\n\nconst initPhoneMask = () => {\n    let inputs = document.querySelectorAll(\"input[type=tel]\");\n    let im = new (inputmask__WEBPACK_IMPORTED_MODULE_0___default())(\"+7 999 999-99-99\");\n    inputs.forEach(input => {\n        im.mask(input);\n    });\n}\n\n\n\n\n\n//# sourceURL=webpack://frontendkit/./src/js/utils/functions.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"initPhoneMask\": () => (/* binding */ initPhoneMask)\n/* harmony export */ });\n/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! inputmask */ \"./node_modules/inputmask/dist/inputmask.js\");\n/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(inputmask__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\nconst initPhoneMask = () => {\r\n    let inputs = document.querySelectorAll(\"input[type=tel]\");\r\n    let im = new (inputmask__WEBPACK_IMPORTED_MODULE_0___default())(\"+7 999 999-99-99\");\r\n    inputs.forEach(input => {\r\n        im.mask(input);\r\n    });\r\n}\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://frontendkit/./src/js/utils/functions.js?");
 
 /***/ })
 
