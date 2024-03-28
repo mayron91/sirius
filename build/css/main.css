@@ -450,6 +450,8 @@ html,body{font-family:"Roboto Mono",sans-serif;color:#fff;background-color:#1B1B
 
 .swiper_container_left_next_slide{width:50%}
 
+.swiper_container_left_next_slide a{font-weight:400;font-size:16px;font-size:1rem;line-height:130%;letter-spacing:0.1em;text-transform:uppercase;color:#00A3C7;text-decoration:none}
+
 .logo{display:block;max-width:200px;max-width:12.5rem;z-index:50}
 
 .logo__img{width:100%}
