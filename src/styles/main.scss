@@ -47,6 +47,7 @@ html, body {
 
 .container {
     width: 100%;
+    max-width: 1700PX;
     padding: 0 20px;
     margin: 0 auto;
     transition: $base-transition;
