@@ -33,7 +33,7 @@ width: 100%;
 .footer_addr {
     margin-left: 115px;
 }
-@media (min-width:768px) and (max-width:1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
     .footer_container {
         flex-direction: column-reverse;
     }
@@ -44,7 +44,7 @@ width: 100%;
         justify-content: space-between;
     }
 }
-@media (min-width:320px) and (max-width:768px) {
+@media only screen and (max-width: 767px) {
     .footer_container {
         flex-direction: column-reverse;
     }
