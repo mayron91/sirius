@@ -31,6 +31,9 @@
 />
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="//npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<script src="//npmcdn.com/isotope-packery@2/packery-mode.pkgd.js"></script>
 
 </head>
 <body class="">
@@ -69,6 +72,39 @@
 </header>
 
 <!-- SECTIONS -->
+<section class="catalog">
+    <div class="container">
+
+<div class="grid">
+  <div class="grid-sizer"></div>
+  <div class="grid-item grid-item--width2"></div>
+  <div class="grid-item grid-item--width3"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item grid-item--width2"></div>
+  <div class="grid-item grid-item--width3"></div>
+  <div class="grid-item grid-item--width2"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item grid-item--width2"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+</div>
+
+    </div>
+</section>
+
+<script>
+    $('.grid').isotope({
+  layoutMode: 'packery',
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  packery: {
+    columnWidth: '.grid-sizer'
+  }
+});
+</script>
 
         <footer class="footer">
     <div class="container">

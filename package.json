@@ -21,6 +21,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-typograf": "^4.0.2",
     "inputmask": "^5.0.7",
+    "isotope-packery": "^2.0.1",
     "node-sass": "^8.0.0",
     "normalize.css": "^8.0.1",
     "postcss": "^8.4.19",

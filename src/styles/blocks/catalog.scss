@@ -1,5 +1,24 @@
 /*catalog*/
+.grid-sizer {
+    width: 20%;
+  }
 
+.grid-item {
+  width: 18%;
+  height: 360PX;
+  margin: 1%;
+  border: 1px solid #00A3C7;
+border-radius: 2px;
+  opacity: 1;
+  float: left;
+  transition: opacity 0.8s ease; /* Плавное появление и исчезновение */
+}
+.grid-item--width2 {
+  width: 38%;
+}
+.grid-item--width3 {
+  width: 58%;
+}
 /*1440*/
 
 /*768*/
