@@ -1,0 +1,94 @@
+<section class="catalog_on_index">
+    <div class="container">
+        <div class="catalog_on_index_title_wr">
+            <h3>НИЗКОВОЛЬТНЫЕ </br> КОМПЛЕКТНЫЕ УСТРОЙСТВА</h3>
+            <div class="catalog_on_index_title_link">В каталог<div class="card_arrow"><img src="img/arrow.svg" alt=""></div></div>
+        </div>
+        <div class="catalog_on_index_wrapper">
+            <div class="container_catalog">
+                <div class="items">
+                    <div class="item">
+                            1
+                    </div>
+                    <div class="item">
+                        1
+                </div>
+                <div class="item">
+                    1
+            </div>
+            <div class="item x2">
+                1
+        </div>
+        <div class="item x3">
+            1
+    </div>
+    <div class="item">
+        1
+</div>
+<div class="item">
+    1
+</div>
+                    <div class="item hidden">
+                </div> 
+                <div class="item hidden">
+            </div>  
+            <div class="item hidden">
+        </div>  
+        <div class="item hidden">
+    </div>  
+    <div class="item hidden">
+</div>  
+<div class="item hidden">
+</div>  
+<div class="item hidden">
+</div>  
+<div class="item hidden">
+</div>    
+                    <!-- Дополнительные скрытые элементы могут быть добавлены здесь -->
+                </div>
+                <button id="toggleBtn">Показать еще <span class="counter"></span></button> <!-- Изначально скрыты скрытые элементы -->
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+            let hiddenItems = document.querySelectorAll('.item.hidden');
+
+            if (hiddenItems.length > 0) {
+                document.getElementById("toggleBtn").innerText = "Показать еще " + hiddenItems.length;
+            } else {
+                document.getElementById("toggleBtn").innerText = "Скрыть";
+            }
+
+            let toggleBtn = document.getElementById("toggleBtn");
+            if (toggleBtn) {
+                toggleBtn.addEventListener("click", function() {
+                    let hiddenItems = document.querySelectorAll('.item.hidden');
+                    let allItems = document.querySelectorAll('.item');
+
+                    if (hiddenItems.length > 0) {
+                        for (let i = 0; i < hiddenItems.length; i++) {
+                            hiddenItems[i].classList.remove('hidden');
+                            hiddenItems[i].style.opacity = 1;
+                        }
+                        this.innerText = "Скрыть";
+                    } else {
+                        for (let i = 7; i < allItems.length; i++) {
+                            allItems[i].classList.add('hidden');
+                            allItems[i].style.opacity = 0;
+                        }
+                        this.innerText = "Показать еще " + (allItems.length - 2);
+                    }
+
+                    hiddenItems = document.querySelectorAll('.item.hidden');
+                    let remainingItems = hiddenItems.length;
+                    
+                    let counter = document.querySelector('.counter');
+                    if (counter) {
+                        counter.innerText = remainingItems;
+                    }
+                });
+            }
+        });
+</script>
