@@ -486,6 +486,16 @@ html,body{font-family:"Roboto Mono",sans-serif;color:#fff;background-color:#1B1B
 
 .x3{flex-basis:59%}
 
+.catalog_on_index_title_wr{display:flex;flex-direction:row;align-items:flex-start;justify-content:space-between;margin-top:190px;margin-top:11.875rem;margin-bottom:20px;margin-bottom:1.25rem}
+
+.catalog_on_index_title_wr h3{font-weight:400;font-size:16PX;line-height:130%;letter-spacing:0.1em;text-transform:uppercase}
+
+.catalog_on_index_title_wr a{text-decoration:none}
+
+.catalog_on_index_title_link{display:flex;flex-direction:row;align-items:center;color:#00A3C7;text-transform:uppercase;padding-top:10px;padding-top:0.625rem}
+
+.catalog_on_index_title_link>.card_arrow{padding:0;margin-left:20px;margin-left:1.25rem}
+
 .logo{display:block;max-width:200px;max-width:12.5rem;z-index:50}
 
 .logo__img{width:100%}

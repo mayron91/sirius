@@ -273,6 +273,37 @@ border-radius: 2px;
 .x3 {
   flex-basis: 59%;
 }
+.catalog_on_index_title_wr {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  
+justify-content: space-between;
+margin-top: 190px;
+margin-bottom: 20px;
+}
+.catalog_on_index_title_wr h3 {
+  font-weight: 400;
+  font-size: 16PX;
+  line-height: 130%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.catalog_on_index_title_wr a {
+  text-decoration: none;
+}
+.catalog_on_index_title_link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #00A3C7;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+.catalog_on_index_title_link>.card_arrow {
+  padding: 0;
+  margin-left: 20px;
+}
 /*768*/
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
 /*swiper*/
