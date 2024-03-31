@@ -248,6 +248,7 @@ text-decoration: none;
   width: 100%;
   height: 100%;
   position: relative;
+  overflow: hidden;
 }
 .container_catalog_item_wr:hover> .card_hover_img {
   visibility: visible;
@@ -263,6 +264,7 @@ text-decoration: none;
   gap: 15PX;
   justify-content: flex-start;
   column-count: 5;
+  margin-bottom: 15PX;
 }
 .items:last-child {
   justify-content: flex-start;
@@ -298,22 +300,44 @@ border-radius: 2px;
   color: #1b1b1b;
 }
 .container_catalog_item_wr>.card_img {
-  margin-top: 35PX;
+  margin-top: 50PX;
+  width: 195PX;
+  height: 275PX;
+  position: relative;
+  overflow: hidden;
+}
+.container_catalog_item_wr>.card_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
 }
 .container_catalog_item_wr>.card_title {
   margin-top: -100PX;
   font-weight: 400;
-font-size: 16px;
+font-size: 16PX;
 line-height: 130%;
 letter-spacing: 0.1em;
 text-transform: uppercase;
 }
+.x2>.container_catalog_item_wr>.card_title {
+  width: 50%;
+}
 .x3>.container_catalog_item_wr>.card_img {
   align-self: center;
   margin: 0;
+  width: 240PX;
+  height: 135PX;
 }
 #toggleBtn {
   width: 260PX;
+  font-size: 16PX;
+  border-radius: 2px;
+padding: 30PX 60PX;
+height: 90PX;
+}
+#toggleBtn:hover {
+  cursor: pointer;
 }
 .card_title_wrapper {
   display: flex;
@@ -358,6 +382,8 @@ margin-bottom: 20px;
 .white_title {
   color: #fff;
 }
+/*our_cap*/
+
 /*768*/
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
 /*swiper*/
