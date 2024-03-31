@@ -360,7 +360,7 @@ html,body{font-family:"Roboto Mono",sans-serif;color:#fff;background-color:#1B1B
 
 .link{font-weight:400;font-size:16px;font-size:1rem;line-height:130%;letter-spacing:0.1em;text-transform:uppercase;color:#00a3c7}
 
-.btn{border:1px solid #00a3c7;border:0.0625rem solid #00a3c7;border-radius:2px;border-radius:0.125rem;padding:30px 60px;padding:1.875rem 3.75rem;width:400px;width:25rem;height:90px;height:5.625rem}
+.btn{border:1px solid #00a3c7;border:0.0625rem solid #00a3c7;border-radius:2px;border-radius:0.125rem;padding:30px 60px;padding:1.875rem 3.75rem;width:400px;width:25rem;height:90px;height:5.625rem;background-color:transparent;color:#00a3c7}
 
 .btn_more{border:1px solid #00a3c7;border:0.0625rem solid #00a3c7;border-radius:2px;border-radius:0.125rem;padding:30px 60px;padding:1.875rem 3.75rem;width:260px;width:16.25rem;height:90px;height:5.625rem}
 
@@ -470,9 +470,13 @@ html,body{font-family:"Roboto Mono",sans-serif;color:#fff;background-color:#1B1B
 
 .special_slider_slide_5{width:70% !important;margin:20px 0 0 100px;margin:1.25rem 0 0 6.25rem}
 
-.container_catalog{text-align:center}
+.container_catalog{display:flex;flex-direction:column;align-items:center;margin-bottom:50px;margin-bottom:3.125rem}
 
-.items{display:flex;flex-direction:row;flex-wrap:wrap;gap:11PX;justify-content:flex-start;column-count:5}
+.container_catalog_item_wr{display:flex;flex-direction:column;justify-content:space-between;width:100%;height:100%;position:relative}
+
+.container_catalog_item_wr:hover>.card_hover_img{visibility:visible;width:100%;height:100%;object-fit:cover;position:absolute}
+
+.items{display:flex;flex-direction:row;flex-wrap:wrap;gap:15PX;justify-content:flex-start;column-count:5}
 
 .items:last-child{justify-content:flex-start}
 
@@ -480,11 +484,25 @@ html,body{font-family:"Roboto Mono",sans-serif;color:#fff;background-color:#1B1B
 
 .hidden{opacity:0;visibility:hidden;max-height:0;transition:opacity 0.8s ease, visibility 0s 0.8s, max-height 0s 0.8s}
 
-.item{width:19%;height:360PX;border:1px solid #00A3C7;border:0.0625rem solid #00A3C7;border-radius:2px;border-radius:0.125rem;opacity:1;transition:opacity 0.8s ease}
+.item{color:#00A3C7;text-decoration:none;width:19%;height:360PX;border:1px solid #00A3C7;border:0.0625rem solid #00A3C7;border-radius:2px;border-radius:0.125rem;opacity:1;transition:opacity 0.8s ease}
 
 .x2{flex-basis:39%}
 
 .x3{flex-basis:59%}
+
+.blue_card_catalog{background-color:#00A3C7;color:#1b1b1b}
+
+.container_catalog_item_wr>.card_img{margin-top:35PX}
+
+.container_catalog_item_wr>.card_title{margin-top:-100PX;font-weight:400;font-size:16px;font-size:1rem;line-height:130%;letter-spacing:0.1em;text-transform:uppercase}
+
+.x3>.container_catalog_item_wr>.card_img{align-self:center;margin:0}
+
+#toggleBtn{width:260PX}
+
+.card_title_wrapper{display:flex;flex-direction:row;justify-content:space-between;align-items:center}
+
+.card_title_right{padding:20px;padding:1.25rem}
 
 .catalog_on_index_title_wr{display:flex;flex-direction:row;align-items:flex-start;justify-content:space-between;margin-top:190px;margin-top:11.875rem;margin-bottom:20px;margin-bottom:1.25rem}
 
@@ -495,6 +513,8 @@ html,body{font-family:"Roboto Mono",sans-serif;color:#fff;background-color:#1B1B
 .catalog_on_index_title_link{display:flex;flex-direction:row;align-items:center;color:#00A3C7;text-transform:uppercase;padding-top:10px;padding-top:0.625rem}
 
 .catalog_on_index_title_link>.card_arrow{padding:0;margin-left:20px;margin-left:1.25rem}
+
+.white_title{color:#fff}
 
 .logo{display:block;max-width:200px;max-width:12.5rem;z-index:50}
 
