@@ -747,28 +747,32 @@ margin-bottom: 0;
 }
 /*catalog on index*/
 .catalog_on_index_title_wr {
-  margin-top: 100px;
-  margin-bottom: 40px;
+  margin-top: 70px;
+  margin-bottom: 0px;
 }
 .items {
   gap: 9PX;
 }
 .item {
   height: 240PX;
-  width: 24%;
+  width: 48%;
 }
 .x2 {
-  flex-basis: 24%;
+  flex-basis: 48%;
 }
 .x2>.container_catalog_item_wr>.card_title {
   width: 100%;
 }
 .x3 {
-  flex-basis: 49%;
+  flex-basis: 99%;
+}
+.x3>.container_catalog_item_wr>.card_img {
+  width: 180PX;
+  height: 100PX;
 }
 .card_title {
   font-weight: 400;
-font-size: 16PX;
+font-size: 14PX;
 line-height: 130%;
 letter-spacing: 0.1em;
 text-transform: uppercase;
@@ -786,12 +790,12 @@ word-break: break-word;
   height: 190PX;
 }
 #toggleBtn {
-  width: 350PX;
+  width: 320PX;
 }
 /*our_cap*/
 .our_cap {
-  margin-top: 90PX;
-  margin-bottom: 60PX;
+  margin-top: 50PX;
+  margin-bottom: 10PX;
 }
 .our_cap_wrapper {
   flex-direction: column;
@@ -805,7 +809,8 @@ word-break: break-word;
   margin-right: 2%;
   width: 48%;
   height: 90PX;
-  margin-bottom: 80PX;
+  margin-bottom: 90PX;
+  font-size: 14PX;
 }
 .our_cap_card_last {
   width: 100%;
@@ -821,7 +826,7 @@ word-break: break-word;
 }
 /*appeal*/
 .appeal {
-  margin-top: 140PX;
+  margin-top: 120PX;
   margin-bottom: 200PX;
 }
 .appeal_wrapper {
@@ -831,7 +836,7 @@ word-break: break-word;
   font-weight: 300;
 font-size: 22PX;
 line-height: 100%;
-padding: 0 60PX;
+padding: 0 20PX;
 }
 
 .appeal_text_left img {
@@ -844,7 +849,7 @@ padding: 0 60PX;
 }
 .sign {
   max-width: 320PX;
-  padding: 0 90PX;
-  margin-top: 80PX;
+  padding: 0 40PX;
+  margin-top: 50PX;
 }
 }
