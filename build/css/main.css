@@ -388,13 +388,33 @@ html,body{font-family:"Roboto Mono",sans-serif;color:#fff;background-color:#1B1B
 
 .footer_addr{margin-left:115px;margin-left:7.1875rem}
 
+.catalog{margin-top:100PX}
+
 .grid-sizer{width:20%}
 
-.grid-item{width:18%;height:360PX;margin:1%;border:1px solid #00A3C7;border:0.0625rem solid #00A3C7;border-radius:2px;border-radius:0.125rem;opacity:1;float:left;transition:opacity 0.8s ease}
+.grid-item{width:18%;height:360PX;margin:1%;border:1px solid #00A3C7;border:0.0625rem solid #00A3C7;border-radius:2px;border-radius:0.125rem;opacity:1;float:left;transition:opacity 0.8s ease;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
+
+a .grid-item{text-decoration:none;color:#00A3C7}
 
 .grid-item--width2{width:38%}
 
 .grid-item--width3{width:58%}
+
+.grid-item:hover>.card_hover_img{visibility:visible;width:100%;height:100%;object-fit:cover;position:absolute}
+
+.grid-item>.card_img{margin-top:20PX;width:195PX;height:360PX;position:relative}
+
+.grid-item>.card_img img{width:100%;height:100%;object-fit:contain;position:absolute;bottom:0;right:0;margin:0 -20px -100px 0;margin:0 -1.25rem -6.25rem 0}
+
+.grid-item{font-weight:400;font-size:16PX;line-height:130%;letter-spacing:0.1em;text-transform:uppercase}
+
+.grid-item>.card_title_wrapper{font-weight:400;font-size:16px;font-size:1rem;line-height:130%;letter-spacing:0.1em;text-transform:uppercase}
+
+.blue_card_catalog>.card_title_wrapper{color:#000}
+
+.grid-item--width3>.card_img{align-self:center;margin:0;width:240PX;height:135PX}
+
+.grid-item--width3>.card_img img{margin:0}
 
 .swiper{margin-top:60px;margin-top:3.75rem;width:100%;height:680px;height:42.5rem}
 
@@ -484,7 +504,7 @@ html,body{font-family:"Roboto Mono",sans-serif;color:#fff;background-color:#1B1B
 
 .hidden{opacity:0;visibility:hidden;max-height:0;transition:opacity 0.8s ease, visibility 0s 0.8s, max-height 0s 0.8s}
 
-.item{color:#00A3C7;text-decoration:none;width:19%;height:360PX;border:1px solid #00A3C7;border:0.0625rem solid #00A3C7;border-radius:2px;border-radius:0.125rem;opacity:1;transition:opacity 0.8s ease}
+.item{color:#00A3C7;text-decoration:none;width:19%;height:360PX;border:1px solid #00A3C7;border:0.0625rem solid #00A3C7;border-radius:2px;border-radius:0.125rem;opacity:1;transition:opacity 0.8s ease;font-weight:400;font-size:16PX;line-height:130%;letter-spacing:0.1em;text-transform:uppercase}
 
 .x2{flex-basis:39%}
 

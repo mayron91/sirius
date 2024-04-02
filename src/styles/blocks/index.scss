@@ -288,6 +288,11 @@ text-decoration: none;
 border-radius: 2px;
   opacity: 1;
   transition: opacity 0.8s ease; /* Плавное появление и исчезновение */
+  font-weight: 400;
+font-size: 16PX;
+line-height: 130%;
+letter-spacing: 0.1em;
+text-transform: uppercase;
 }
 .x2 {
   flex-basis: 39%;
