@@ -428,6 +428,48 @@ html,body{font-family:"Roboto Mono",sans-serif;color:#fff;background-color:#1B1B
 
 .accordion-content.show{max-height:1000px;max-height:62.5rem;padding:10px 0;padding:0.625rem 0;font-weight:300;font-size:20PX;line-height:130%;transition:max-height 0.3s ease-in, padding 0.3s ease-in}
 
+.popup-link_card{display:flex;flex-wrap:wrap}
+
+.popup-link a{background:#333;color:#fff;padding:10px 30px;padding:0.625rem 1.875rem;border-radius:5px;border-radius:0.3125rem;font-size:17px;font-size:1.0625rem;cursor:pointer;margin:20px;margin:1.25rem;text-decoration:none}
+
+.popup-container_card{visibility:hidden;opacity:0;transition:all 0.3s ease-in-out;transform:scale(1.3);position:fixed;z-index:1;left:0;top:0;width:100%;height:100%;background-color:rgba(21,17,17,0.61);display:flex;align-items:center;justify-content:center}
+
+.popup-content_card{margin:auto;width:60vw;height:80vh}
+
+.popup-content_card p{font-size:17px;font-size:1.0625rem;padding:10px;padding:0.625rem;line-height:20px;line-height:1.25rem;margin-top:90PX}
+
+.popup-content_card a.close{color:#00A3C7;float:right;font-size:28px;font-size:1.75rem;font-weight:bold;background:none;padding:0;margin:0;text-decoration:none}
+
+.popup-content_card a.close:hover{color:#333}
+
+.popup-content_card span:hover,.popup-content_card span:focus{color:#000;text-decoration:none;cursor:pointer}
+
+.popup-container_card:target{visibility:visible;opacity:1;transform:scale(1);background:rgba(27,27,27,0.9)}
+
+.popup-container_card h3{margin:10px;margin:0.625rem}
+
+.mySwiper2{height:460PX !important;max-width:840PX !important}
+
+.mySwiper{height:65PX !important;margin-top:22Px !important;max-width:840PX !important}
+
+.mySwiper2>.swiper-slide{width:840PX;height:460PX}
+
+.mySwiper2>.swiper-slide img{width:100%;height:100%;object-fit:contain}
+
+.relative{position:relative}
+
+.swiper-button-next_card{bottom:20PX !important;top:auto !important;width:60PX !important;height:15PX !important}
+
+.swiper-button-prev_card{bottom:20PX !important;top:auto !important;width:60PX !important;height:15PX !important}
+
+.swiper-button-next_card::after{content:'' !important;background:url("../img/card/arrow_gallery.png") !important;transform:rotate(180deg);width:60PX !important;height:15PX !important}
+
+.swiper-button-prev_card::after{content:'' !important;background:url("../img/card/arrow_gallery.png") !important;width:60PX !important;height:15PX !important}
+
+.swiper-slide_thumb{width:120PX;height:65PX}
+
+.swiper-slide_thumb img{width:100%;height:100%;object-fit:contain}
+
 .catalog{margin-top:140PX;margin-bottom:190PX}
 
 .grid-sizer{width:20%}

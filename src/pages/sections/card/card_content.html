@@ -14,7 +14,93 @@
                     </div>
                 </div>
                 <div class="card_content_table_wripper_right">
-                    <a href="">Смотреть фото</a>
+                    <div class="popup-link_card">
+                        <a href="#popup1">Смотреть фото</a>
+                        </div>
+                        <!--popup1-->
+<div id="popup1" class="popup-container_card">
+    <div class="popup-content_card">
+      <a href="#" class="close">&times;</a>
+     <!-- Slider main container -->
+         <!-- Swiper -->
+         <div class="container">
+  <div class="swiper mySwiper2">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="img/card/image_gallery.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/card/image_gallery.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/card/image_gallery.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/card/image_gallery.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/card/image_gallery.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/card/image_gallery.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/card/image_gallery.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/card/image_gallery.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/card/image_gallery.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/card/image_gallery.jpg" />
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="swiper-button-next swiper-button-next_card"></div>
+  <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev swiper-button-prev_card"></div>
+    
+  <div thumbsSlider="" class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide swiper-slide_thumb">
+        <img src="img/card/image_gallery.jpg" />
+      </div>
+      <div class="swiper-slide swiper-slide_thumb">
+        <img src="img/card/image_gallery.jpg" />
+      </div>
+      <div class="swiper-slide swiper-slide_thumb">
+        <img src="img/card/image_gallery.jpg" />
+      </div>
+      <div class="swiper-slide swiper-slide_thumb">
+        <img src="img/card/image_gallery.jpg" />
+      </div>
+      <div class="swiper-slide swiper-slide_thumb">
+        <img src="img/card/image_gallery.jpg" />
+      </div>
+      <div class="swiper-slide swiper-slide_thumb">
+        <img src="img/card/image_gallery.jpg" />
+      </div>
+      <div class="swiper-slide swiper-slide_thumb">
+        <img src="img/card/image_gallery.jpg" />
+      </div>
+      <div class="swiper-slide swiper-slide_thumb">
+        <img src="img/card/image_gallery.jpg" />
+      </div>
+      <div class="swiper-slide swiper-slide_thumb">
+        <img src="img/card/image_gallery.jpg" />
+      </div>
+      <div class="swiper-slide swiper-slide_thumb">
+        <img src="img/card/image_gallery.jpg" />
+      </div>
+    </div>
+  </div>
+    </div>
+    </div>
+  </div>
                 </div>
             </div>
         </div>
@@ -143,4 +229,26 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+</script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 10,
+      slidesPerView: 6,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+    });
 </script>
