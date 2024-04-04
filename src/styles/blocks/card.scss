@@ -244,20 +244,27 @@ line-height: 130%;
     object-fit: cover !important;
     
   }
-  .relative {
+  .card_nav_pag_wrapper {
     position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .swiper-button-next_card {
     bottom: 20PX !important;
     top: auto !important;
     width: 60PX !important;
     height: 15PX !important;
+    bottom: -60PX !important;
+    z-index: 10;
   }
   .swiper-button-prev_card {
     bottom: 20PX !important;
     top: auto !important;
     width: 60PX !important;
     height: 15PX !important;
+    bottom: -60PX !important;
+    z-index: 10;
   }
   .swiper-button-next_card::after {
     content: '' !important;
@@ -265,12 +272,14 @@ line-height: 130%;
     transform: rotate(180deg);
     width: 60PX !important;
     height: 15PX !important;
+    z-index: 15;
   }
   .swiper-button-prev_card::after {
     content: '' !important;
     background: url('../img/card/arrow_gallery.png') !important;
     width: 60PX !important;
     height: 15PX !important;
+    z-index: 15;
   }
   .swiper-slide_thumb {
     width: 120PX;
@@ -287,6 +296,107 @@ line-height: 130%;
     bottom: 20PX !important;
     top: auto !important;
     color: #00A3C7 !important;
+    bottom: -60PX !important;
+    z-index: 5 !important;
+  }
+  .card_tech_options_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .card_tech_options_item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: baseline;
+  }
+  .card_tech_options_dot {
+    height: 16PX;
+    width: 100%;
+    border-bottom: 1PX dotted #fff;
+  }
+  /*styles fo print*/
+  @media print {
+    body {
+      color: #000;
+    }
+    .header__contacts {
+      display: none;
+    }
+    .header_container {
+      justify-content: center;
+    }
+    .bread_crumbs {
+      display: none;
+    }
+    .print_icon {
+      display: none;
+    }
+    .card_content_table_wripper {
+      margin-top: 90PX;
+      color: #000;
+      border: 1px solid #000;
+    }
+    .card_content_table_wripper_right {
+      display: none;
+      border: none;
+    }
+    .card_content_table_wripper_left {
+      width: 100%;
+    }
+    .card_content_table_wripper_left_title {
+      width: 100%;
+      color: #000;
+      border-bottom: 1px solid #000;
+    }
+    .card_content_table_wripper_left_sub_title {
+      color: #000;
+    }
+    .feedback_wrapper h2 {
+      display: none;
+    }
+    .footer {
+      display: none;
+    }
+    .btn {
+      border: none;
+      color: #000;
+    }
+    .accordion-item {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    .icon {
+      display: none;
+    }
+    .accordion-button {
+      width: 270PX;
+    }
+    .accordion-button span {
+      color: #000;
+      font-size: 16PX;
+      text-wrap: wrap;
+    }
+    .accordion-content.show {
+      padding: 0;
+      margin-top: -20PX;
+      margin-bottom: 40PX;
+      width: 700PX;
+    }
+    .accordion-content.show p {
+      font-size: 16PX;
+    }
+    .catalog_after_feedback {
+      display: none;
+    }
+    .accordion {
+      margin: 120PX auto 0PX auto;
+    }
+    .logo img {
+      filter: grayscale(100%);
+    }
+    .card_tech_options_dot {
+      border-bottom: 1PX dotted #333;
+    }
   }
 /*768*/
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
@@ -350,7 +460,7 @@ align-items: center ;
 /*gallery swipper*/
 .popup-content_card {
     margin: auto;
-    width: 90vw;
+    width: 99vw;
     height: 80vh;
 }
 .mySwiper2 {
@@ -361,6 +471,20 @@ align-items: center ;
   }
   .mySwiper2>.swiper-wrapper>.swiper-slide {
     height: 380PX !important;
+  }
+  .card_tech_options_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .card_tech_options_item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: baseline;
+  }
+  .card_tech_options_dot {
+    height: 16PX;
+    width: 100%;
+    border-bottom: 1PX dotted #fff;
   }
 }
 /*360*/
@@ -432,7 +556,7 @@ align-items: center ;
     /*gallery swipper*/
 .popup-content_card {
     margin: auto;
-    width: 90vw;
+    width: 100vw;
     height: 80vh;
 }
 .mySwiper2 {
@@ -440,9 +564,23 @@ align-items: center ;
   }
   .mySwiper {
     height: 65PX !important;
-    margin-top: 5PX !important;
+    margin-top: 0PX !important;
   }
   .mySwiper2>.swiper-wrapper>.swiper-slide {
     height: 180PX !important;
+  }
+  .card_tech_options_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .card_tech_options_item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: baseline;
+  }
+  .card_tech_options_dot {
+    height: 16PX;
+    width: 100%;
+    border-bottom: 1PX dotted #fff;
   }
 }

@@ -1,7 +1,7 @@
 <section class="card_content">
     <div class="container">
         <div class="card_content_wripper">
-            <div class="print_icon"><img src="img/card/forprint.png" alt=""></div>
+            <div class="print_icon"><a class ="print-doc" href="javascript:(print());"><img src="img/card/forprint.png" alt=""></a></div>
             <div class="card_content_table_wripper">
                 <div class="card_content_table_wripper_left">
                     <div class="card_content_table_wripper_left_title">
@@ -60,9 +60,7 @@
     
   </div>
   
-  <div class="swiper-button-next swiper-button-next_card"></div>
-  <div class="swiper-pagination swiper-pagination_card"></div>
-    <div class="swiper-button-prev swiper-button-prev_card"></div>
+  
     
   <div thumbsSlider="" class="swiper mySwiper">
     <div class="swiper-wrapper">
@@ -98,6 +96,11 @@
       </div>
     </div>
   </div>
+  <div class="container card_nav_pag_wrapper">
+    <div class="swiper-button-next swiper-button-next_card"></div>
+  <div class="swiper-pagination swiper-pagination_card"></div>
+    <div class="swiper-button-prev swiper-button-prev_card"></div>
+  </div>
     </div>
     </div>
   </div>
@@ -132,18 +135,12 @@
                         <i class="icon"><img src="img/card/plus.png" alt="+"></i>
                         </button>
                         <div class="accordion-content">
-                            <p>Распределене электроэнергии (ШР, ПР, ЯВР)</p>
-                <p>Автоматический ввод резерва (АВР, ШАВР, ЩАП, БАВР)</p>
-                <p>Управление освещением, обогревом, вентиляцией (ЯО, ЩО, ЩАО, ЩЭО, ЩВ)</p>
-                <p> Учет электроэнергии (ЯУР, АСУЭ)</p>
-                <p> Управление ЭД (ШУН, ШУЭ, ШУД)</p>
-                <p> Питание пожарных систем (ППУ)</p>
-                <p>Сигнализация технологических систем и процессов (ШС)</p>
-                <p>Охранная пожарная сигнализация (ШОС, ШПС)</p>
-                <p>Питание собственных производственных нужд </p>
-                <p>Питание бытовых помещений (ШНС, ВРУ)</p>
-                <p>Питание и защита солнечных станций и панелей, распределение постоянного тока</p>
-                        </div>
+                <p>Удаленный мониторинг с/к, RS485, Ethernet и др.</p>
+                <p>Панель оператора</p>
+                <p>Мониторинг контактных соединений</p>
+                <p> Коммерческий и/или технический учет электроэнергии</p>
+                <p> Измерение параметров электрических сетей</p>
+                </div>
                     </div>
                     <div class="accordion-item">
                         <button class="accordion-button">
@@ -170,17 +167,65 @@
                         <i class="icon"><img src="img/card/plus.png" alt="+"></i>
                         </button>
                         <div class="accordion-content">
-                            <p>Распределене электроэнергии (ШР, ПР, ЯВР)</p>
-                <p>Автоматический ввод резерва (АВР, ШАВР, ЩАП, БАВР)</p>
-                <p>Управление освещением, обогревом, вентиляцией (ЯО, ЩО, ЩАО, ЩЭО, ЩВ)</p>
-                <p> Учет электроэнергии (ЯУР, АСУЭ)</p>
-                <p> Управление ЭД (ШУН, ШУЭ, ШУД)</p>
-                <p> Питание пожарных систем (ППУ)</p>
-                <p>Сигнализация технологических систем и процессов (ШС)</p>
-                <p>Охранная пожарная сигнализация (ШОС, ШПС)</p>
-                <p>Питание собственных производственных нужд </p>
-                <p>Питание бытовых помещений (ШНС, ВРУ)</p>
-                <p>Питание и защита солнечных станций и панелей, распределение постоянного тока</p>
+                        
+                          <div class="card_tech_options_wrapper">
+                            <div class="card_tech_options_item">
+                              <div class="card_tech_options_name"><p>Класс напряжения</p></div>
+                              <div class="card_tech_options_dot"></div>
+                              <div class="card_tech_options"><p>До 1 кВ АС и 1,5 кВ ВC</p></div>
+                            </div>
+                            <div class="card_tech_options_item">
+                              <div class="card_tech_options_name"><p>Класс напряжения</p></div>
+                              <div class="card_tech_options_dot"></div>
+                              <div class="card_tech_options"><p>До 1 кВ АС и 1,5 кВ ВC</p></div>
+                            </div>
+                            <div class="card_tech_options_item">
+                              <div class="card_tech_options_name"><p>Класс напряжения</p></div>
+                              <div class="card_tech_options_dot"></div>
+                              <div class="card_tech_options"><p>До 1 кВ АС и 1,5 кВ ВC</p></div>
+                            </div>
+                            <div class="card_tech_options_item">
+                              <div class="card_tech_options_name"><p>Класс напряжения</p></div>
+                              <div class="card_tech_options_dot"></div>
+                              <div class="card_tech_options"><p>До 1 кВ АС и 1,5 кВ ВC</p></div>
+                            </div>
+                            <div class="card_tech_options_item">
+                              <div class="card_tech_options_name"><p>Класс напряжения</p></div>
+                              <div class="card_tech_options_dot"></div>
+                              <div class="card_tech_options"><p>До 1 кВ АС и 1,5 кВ ВC</p></div>
+                            </div>
+                            <div class="card_tech_options_item">
+                              <div class="card_tech_options_name"><p>Класс напряжения</p></div>
+                              <div class="card_tech_options_dot"></div>
+                              <div class="card_tech_options"><p>До 1 кВ АС и 1,5 кВ ВC</p></div>
+                            </div>
+                            <div class="card_tech_options_item">
+                              <div class="card_tech_options_name"><p>Класс напряжения</p></div>
+                              <div class="card_tech_options_dot"></div>
+                              <div class="card_tech_options"><p>До 1 кВ АС и 1,5 кВ ВC</p></div>
+                            </div>
+                            <div class="card_tech_options_item">
+                              <div class="card_tech_options_name"><p>Класс напряжения</p></div>
+                              <div class="card_tech_options_dot"></div>
+                              <div class="card_tech_options"><p>До 1 кВ АС и 1,5 кВ ВC</p></div>
+                            </div>
+                            <div class="card_tech_options_item">
+                              <div class="card_tech_options_name"><p>Класс напряжения</p></div>
+                              <div class="card_tech_options_dot"></div>
+                              <div class="card_tech_options"><p>До 1 кВ АС и 1,5 кВ ВC</p></div>
+                            </div>
+                            <div class="card_tech_options_item">
+                              <div class="card_tech_options_name"><p>Класс напряжения</p></div>
+                              <div class="card_tech_options_dot"></div>
+                              <div class="card_tech_options"><p>До 1 кВ АС и 1,5 кВ ВC</p></div>
+                            </div>
+                            <div class="card_tech_options_item">
+                              <div class="card_tech_options_name"><p>Класс напряжения</p></div>
+                              <div class="card_tech_options_dot"></div>
+                              <div class="card_tech_options"><p>До 1 кВ АС и 1,5 кВ ВC</p></div>
+                            </div>
+                          </div>
+                        
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -205,31 +250,49 @@
                 </div>
     </div>
 </section>
+
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const accordionButtons = document.querySelectorAll('.accordion-button');
+  document.addEventListener('DOMContentLoaded', function() {
+    const accordionButtons = document.querySelectorAll('.accordion-button');
 
-  // Open the first accordion item by default
-  const firstContent = accordionButtons[0].nextElementSibling;
-  firstContent.classList.add('show');
-  const firstIcon = accordionButtons[0].querySelector('.icon');
-  firstIcon.innerHTML = '<img src="img/card/minus.png" alt="-">';
+    // Open all accordion items
+    function openAllAccordionItems() {
+        accordionButtons.forEach(button => {
+            const content = button.nextElementSibling;
+            content.classList.add('show');
+            const icon = button.querySelector('.icon');
+            icon.innerHTML = '<img src="img/card/minus.png" alt="-">';
+        });
+    }
 
-  accordionButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      const content = this.nextElementSibling;
+    // Open the first accordion item by default
+    const firstContent = accordionButtons[0].nextElementSibling;
+    firstContent.classList.add('show');
+    const firstIcon = accordionButtons[0].querySelector('.icon');
+    firstIcon.innerHTML = '<img src="img/card/minus.png" alt="-">';
 
-      // Toggle the .show class to handle the transition
-      content.classList.toggle('show');
-
-      const icon = this.querySelector('.icon');
-      icon.innerHTML = icon.innerHTML === '<img src="img/card/plus.png" alt="+">' ? '<img src="img/card/minus.png" alt="-">' : '<img src="img/card/plus.png" alt="+">';
+    accordionButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const content = this.nextElementSibling;
+            
+            // Toggle the .show class to handle the transition
+            content.classList.toggle('show');
+    
+            const icon = this.querySelector('.icon');
+            icon.innerHTML = icon.innerHTML === '<img src="img/card/plus.png" alt="+">' ? '<img src="img/card/minus.png" alt="-">' : '<img src="img/card/plus.png" alt="+">';
+        });
     });
-  });
+
+    // Handle printing action to open all accordion items
+    const printDocLink = document.querySelector('.print-doc');
+    printDocLink.addEventListener('click', function() {
+        openAllAccordionItems();
+        print();
+    });
 });
 
-
 </script>
+
 <script>
     var swiper = new Swiper(".mySwiper", {
       spaceBetween: 10,
@@ -239,11 +302,11 @@ document.addEventListener('DOMContentLoaded', function() {
       breakpoints: {
         320: {
           slidesPerView: 4,
-          spaceBetween: 20,
+          spaceBetween: 10,
         },
         768: {
           slidesPerView: 5,
-          spaceBetween: 30,
+          spaceBetween: 10,
         },
         1440: {
           slidesPerView: 6,
