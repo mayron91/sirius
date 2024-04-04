@@ -217,7 +217,8 @@ line-height: 130%;
     visibility: visible;
     opacity: 1;
     transform: scale(1);
-    background: rgba(27, 27, 27, 0.9);;
+    background: rgba(27, 27, 27, 0.9);
+    z-index: 999;
   }
   
   .popup-container_card h3{
@@ -256,7 +257,7 @@ line-height: 130%;
     width: 60PX !important;
     height: 15PX !important;
     bottom: -60PX !important;
-    z-index: 10;
+    z-index: 10 !important;
   }
   .swiper-button-prev_card {
     bottom: 20PX !important;
@@ -264,7 +265,7 @@ line-height: 130%;
     width: 60PX !important;
     height: 15PX !important;
     bottom: -60PX !important;
-    z-index: 10;
+    z-index: 10 !important;
   }
   .swiper-button-next_card::after {
     content: '' !important;
@@ -272,14 +273,14 @@ line-height: 130%;
     transform: rotate(180deg);
     width: 60PX !important;
     height: 15PX !important;
-    z-index: 15;
+    z-index: 15 !important;
   }
   .swiper-button-prev_card::after {
     content: '' !important;
     background: url('../img/card/arrow_gallery.png') !important;
     width: 60PX !important;
     height: 15PX !important;
-    z-index: 15;
+    z-index: 15 !important;
   }
   .swiper-slide_thumb {
     width: 120PX;
@@ -583,8 +584,4 @@ align-items: center ;
     width: 100%;
     border-bottom: 1PX dotted #fff;
   }
-}
-.projct {
-  margin-top: 90PX;
-  background-color: red;
 }
