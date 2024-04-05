@@ -390,15 +390,17 @@ html,body{font-family:"Roboto Mono",sans-serif;color:#fff;background-color:#1B1B
 
 .about_us_back_top{width:100%;height:910PX;background:url("../img/about_us/about_back.jpg") no-repeat;background-position:40% 100%;object-fit:cover}
 
-.about_us_title_wripper{position:absolute;top:0;left:auto}
+.about_us_title_wripper{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:100%}
 
-.about_us_title_wripper_container{width:100%;padding:420PX 0 0 300PX}
+.about_us_title_wripper_container{width:50%;margin:-300PX 0 0 280PX}
 
 .about_us_title_wripper h1{font-weight:300;font-size:48PX;line-height:100%;width:550PX}
 
 .about_us_sub_title{width:550PX;margin-top:40PX;font-weight:300;font-size:20PX;line-height:120%}
 
-.time_line_maket{display:grid;grid-template-columns:44PX 130PX 130PX 130PX 130PX 130PX 130PX 130PX 130PX 130PX 130PX 44PX;justify-content:center}
+.time_line_swipper_wrapper{margin-top:200PX}
+
+.time_line_maket{display:grid;grid-template-columns:40PX repeat(10, 130PX) 40PX;justify-content:center}
 
 .time_line_item{width:100%;height:50PX;border-right:1px solid #00d1ff;border-right:0.0625rem solid #00d1ff;border-top:1px solid #00d1ff;border-top:0.0625rem solid #00d1ff}
 
@@ -414,11 +416,41 @@ html,body{font-family:"Roboto Mono",sans-serif;color:#fff;background-color:#1B1B
 
 .swiper-button-next_time_line_Swiper,.swiper-button-prev_time_line_Swiper{top:auto !important;width:60PX !important;height:15PX !important;bottom:-15PX !important;z-index:10 !important}
 
-.swiper-button-prev_time_line_Swiper::after{content:'' !important;background:url("../img/card/arrow_gallery.png") !important;width:60PX !important;height:15PX !important}
+.swiper-button-prev_time_line_Swiper::after{content:'' !important;background:url("../img/card/arrow_gallery.png") !important;width:60PX !important;height:15PX !important;position:absolute}
 
-.swiper-button-next_time_line_Swiper::after{content:'' !important;background:url("../img/card/arrow_gallery.png") !important;transform:rotate(180deg);width:60PX !important;height:15PX !important}
+.swiper-button-next_time_line_Swiper::after{content:'' !important;background:url("../img/card/arrow_gallery.png") !important;transform:rotate(180deg);width:60PX !important;height:15PX !important;position:absolute}
 
 .time_line_Swiper_wrapper{display:flex;flex-direction:column;align-items:center}
+
+.year{font-weight:400;font-size:16PX;color:#00d1ff;line-height:130%;letter-spacing:0.07em;text-transform:uppercase;text-align:center}
+
+.time_line_Swiper_content_wr{margin-top:140PX;display:grid;grid-template-columns:300PX 410PX 550PX;align-items:start;justify-content:start;width:100%}
+
+.time_line_Swiper_content_wr span{font-weight:400;font-size:16PX;line-height:130%;letter-spacing:0.1em;text-transform:uppercase;color:#00d1ff}
+
+.time_line_Swiper_content_wr h2{font-weight:300;font-size:48PX;line-height:100%;color:#00d1ff;padding:0;margin:0}
+
+.time_line_Swiper_content_wr p{font-weight:300;font-size:20PX;color:#00d1ff;line-height:120%;padding:0;margin:0}
+
+.work_in_rus_wrapper{margin-top:240PX;display:flex;flex-direction:row;align-items:center}
+
+.work_in_rus_wrapper span{width:290PX;margin-top:16PX}
+
+.work_in_rus_wrapper_text{font-weight:290;font-size:20PX;line-height:120%;width:540PX}
+
+.work_in_rus_map{display:flex;flex-direction:column;width:360PX;height:230PX;margin-left:150PX;margin-top:-40px;margin-top:-2.5rem}
+
+.work_in_rus_map img{width:100%;height:100%;object-fit:contain}
+
+.work_in_rus_map span{font-weight:400;font-size:16PX;color:#00d1ff;line-height:130%;letter-spacing:0.1em;text-transform:uppercase}
+
+.work_with_prom{display:flex;flex-direction:row;margin-top:140PX;align-items:flex-start;margin-bottom:-100px;margin-bottom:-6.25rem}
+
+.work_with_prom h2{font-weight:400;font-size:16PX;line-height:130%;letter-spacing:0.1em;text-transform:uppercase;width:250PX;margin-right:50PX;padding:0;margin-top:50PX}
+
+.work_with_prom_text{display:flex;flex-direction:row;flex-wrap:wrap}
+
+.work_with_prom_text p{font-weight:300;font-size:36PX;line-height:100%;text-transform:uppercase;padding:0 30PX;width:auto}
 
 .bread_crumbs{margin-top:160PX}
 
