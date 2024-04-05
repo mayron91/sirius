@@ -1,7 +1,94 @@
 /*about_us*/
-
 /*1440*/
-
+.about_us_back_top {
+    width: 100%;
+    height: 910PX;
+    background: url('../img/about_us/about_back.jpg') no-repeat;
+    background-position: 40% 100%;
+    object-fit: cover;
+}
+.about_us_title_wripper {
+    position: absolute;
+    top: 0;
+    left: auto;
+}
+.about_us_title_wripper_container {
+    width: 100%;    
+    padding: 420PX 0 0 300PX;
+}
+.about_us_title_wripper h1 {
+    font-weight: 300;
+font-size: 48PX;
+line-height: 100%;
+width: 550PX;
+}
+.about_us_sub_title {
+    width: 550PX;
+    margin-top: 40PX;
+    font-weight: 300;
+font-size: 20PX;
+line-height: 120%;
+}
+.time_line_maket {
+    display: grid;
+    grid-template-columns: 44PX 130PX 130PX 130PX 130PX 130PX 130PX 130PX 130PX 130PX 130PX 44PX;
+    justify-content: center;
+}
+.time_line_item {
+    width: 100%;
+    height: 50PX;
+    border-right: 1px solid #00d1ff;
+    border-top: 1px solid #00d1ff;
+}
+.time_line_item_center {
+    height: 100PX;
+}
+.time_line_item_last {
+    border-right: none;
+}
+.time_line_swipper_container {margin-top: -50PX;}
+.time_line_Swiper {
+    height: 420PX !important;
+    margin-top: 70PX !important;
+}
+.time_line_Swiper_nav_pag_wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.swiper-button-next_time_line_Swiper,
+.swiper-button-prev_time_line_Swiper {
+    top: auto !important;
+    width: 60PX !important;
+    height: 15PX !important;
+    bottom: -15PX !important;
+    z-index: 10 !important;
+}
+.swiper-button-prev_time_line_Swiper::after {
+    content: '' !important;
+    background: url('../img/card/arrow_gallery.png') !important;
+    width: 60PX !important;
+    height: 15PX !important;
+}
+.swiper-button-next_time_line_Swiper::after {
+    content: '' !important;
+    background: url('../img/card/arrow_gallery.png') !important;
+    transform: rotate(180deg);
+    width: 60PX !important;
+    height: 15PX !important;
+}
+.time_line_Swiper_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /*768*/
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
 
+}
 /*360*/
+@media only screen and (max-width: 767px) {
+
+}
