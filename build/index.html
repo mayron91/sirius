@@ -35,11 +35,23 @@
 <script src="//npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 <script src="//npmcdn.com/isotope-packery@2/packery-mode.pkgd.js"></script>
 
+<script>
+  $(window).on('load', function () {
+    $preloader = $('.loaderArea'),
+      $loader = $preloader.find('.loader');
+    $loader.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+  });
+</script>
+
 </head>
 <body class="">
 
     <div class="site-wrapper" id="vue-app">
-        <header class="header">
+        <div class="loaderArea">
+    <div class="loader"></div>
+ </div>
+<header class="header">
     <div class="container">
         <div class="header_container">
         <a href="/" class="logo">
@@ -113,8 +125,8 @@
           </div>
 
         </div>
-        <div class="choocookie_wrapper">
-          <span>Мы используем <a href="">куки</a> </span> <a href="" class="ok">OK</a>
+        <div class="choocookie_wrapper" id="choocookie_wr">
+          <span>Мы используем <a href="">куки</a> </span> <a href="#" id="choocookie_link" class="ok">OK</a>
          </div>
       </div>
       </div>
@@ -200,6 +212,11 @@
  },
 
 });
+</script>
+<script>
+  document.getElementById('choocookie_link').onclick = function() {
+  document.getElementById('choocookie_wr').classList.add('choocookie_link_hidden');
+}
 </script>
 <section class="catalog_on_index">
     <div class="container">
@@ -460,6 +477,16 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
     </div>
 </footer>
+<!--stycky header-->
+<script>
+    $(window).scroll(function(){
+              if($(this).scrollTop() > 100){
+                  $('.header').addClass('sticky')
+              } else{
+                  $('.header').removeClass('sticky')
+              }
+          });
+  </script>
     </div>
 
     <!-- ---------- SCRIPTS ---------- -->

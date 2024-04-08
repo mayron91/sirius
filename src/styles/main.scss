@@ -52,8 +52,8 @@ html, body {
     margin: 0 auto;
     transition: $base-transition;
     @include respond-to('medium') {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 /*768*/
@@ -97,4 +97,34 @@ html, body {
 // ------------------------------------
 //      S E C T I O N S
 // ------------------------------------
-
+.loaderArea {
+    background: #1b1b1b;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom:0;
+    z-index: 100000;
+  }
+  .loader {
+    height: 109PX;
+    width: 124PX;
+    margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+    background: url('../img/loader.png') no-repeat;
+    animation: 2s animate infinite;
+  }
+   
+   
+  @keyframes animate {
+    0% {
+      transform: rotate(0);
+    }
+     
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  

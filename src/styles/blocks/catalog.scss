@@ -33,11 +33,11 @@ width: 38%;
 width: 58%;
 }
 .grid-item:hover> .card_hover_img {
-  visibility: visible;
   width: 100%;
   height: 100%;
   object-fit: cover;
   position: absolute;
+  animation: anim 2.5s forwards;
 }
 .grid-item>.card_img {
   width: 260PX;
@@ -98,6 +98,7 @@ text-transform: uppercase;
 .catalog h1 {
  display: none;
 }
+
 /*768*/
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
   .grid-sizer {

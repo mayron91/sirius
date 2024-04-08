@@ -39,8 +39,8 @@
           </div>
           
         </div>
-        <div class="choocookie_wrapper">
-          <span>Мы используем <a href="">куки</a> </span> <a href="" class="ok">OK</a>
+        <div class="choocookie_wrapper" id="choocookie_wr">
+          <span>Мы используем <a href="">куки</a> </span> <a href="#" id="choocookie_link" class="ok">OK</a>
          </div>
       </div>
       </div>
@@ -127,4 +127,9 @@
  },
 
 });
+</script>
+<script>
+  document.getElementById('choocookie_link').onclick = function() {
+  document.getElementById('choocookie_wr').classList.add('choocookie_link_hidden');
+}
 </script>
