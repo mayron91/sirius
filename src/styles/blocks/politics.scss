@@ -1,9 +1,55 @@
 /*politics*/
-
 /*1440*/
 .politics {
-    margin-top: 90PX;
+    margin-top: 190PX;
+    margin-bottom: 250PX;
+}
+.politics_wrapper {
+    width: 100%;
+    max-width: 750PX;
+    margin: 0 auto;
+    
+}
+.politics_wrapper h1 {
+    font-weight: 300;
+font-size: 48PX;
+line-height: 100%;
+}
+.politics_sub_title {
+    font-weight: 300;
+font-size: 48PX;
+line-height: 100%;
+opacity: 0.3;
+margin: 60PX 0;
+}
+.politics_wrapper h2 {
+    font-weight: 400;
+    font-size: 16PX;
+    line-height: 130%;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+.politics_wrapper p {
+    font-weight: 300;
+    font-size: 20PX;
+    line-height: 130%;
+    margin-bottom: 70PX;
 }
 /*768*/
 
 /*360*/
+@media only screen and (max-width: 767px)  {
+    .politics_wrapper h1 {
+    font-size: 24PX;
+    }
+    .politics_sub_title {
+    font-size: 24PX;
+    }
+    .politics_wrapper p {
+        font-size: 16PX;
+    }
+    .politics {
+        margin-top: 90PX;
+        margin-bottom: 100PX;
+    }
+}
