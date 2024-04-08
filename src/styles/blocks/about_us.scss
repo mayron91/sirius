@@ -6,6 +6,7 @@
     background: url('../img/about_us/about_back.jpg') no-repeat;
     background-position: 40% 100%;
     object-fit: cover;
+    position: relative;
 }
 .about_us_title_wripper {
     position: absolute;
@@ -201,11 +202,238 @@ text-transform: uppercase;
 padding: 0 30PX;
 width: auto;
 }
+.about_us_title_wripper_container h2 {
+    display: none;
+}
+.hist_screen {
+    display: none;
+}
 /*768*/
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
+    .about_us_back_top {
+        width: 768PX;
+        height: 600PX;
+        background: url("../img/about_us/about_back768.jpg") no-repeat;
+        background-position: 40% 100%;
+        margin: 0 auto;
+    }
+    .hist_screen {
+        display: block;
+        font-weight: 400;
+font-size: 16PX;
+line-height: 130%;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: #00d1ff;
+margin-top: 60PX;
+    }
+    .about_us_title_wripper_container h2 {
+        display: block;
+        margin-top: -90PX;
+        font-weight: 300;
+font-size: 20PX;
+line-height: 110%;
+margin: -90PX 0 0 0;
+padding: 0;
+    }
+    .about_us_title_wripper_container h1 {
+        font-weight: 300;
+font-size: 24PX;
+line-height: 110%;
+margin-top: 220PX;
+    }
+    .about_us_sub_title {
+        font-weight: 300;
+font-size: 16PX;
+line-height: 120%;
+width: 100%;
+margin-top: 0px;
+max-width: 350PX;
+    }
+    .about_us_title_wripper_container {
+        display: flex;
+        flex-direction: column;
+        margin: -400PX 0 0 0PX;
 
+    }
+    .time_line_maket {
+        grid-template-columns: 30PX repeat(10, 70PX) 30PX;
+    }
+    .time_line_Swiper_content_wr span {
+        display: none;
+    }
+    .time_line_Swiper_content_wr {
+        display: flex;
+    }
+    .work_in_rus_wrapper span {
+        display: none;
+    }
+    .work_in_rus_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .work_with_prom {
+        flex-direction: column;
+    }
+    .time_line_swipper_wrapper {
+        margin-top: 40PX;
+    }
+    .time_line_item {
+        height: 20PX;
+    }
+    .time_line_item_center {
+        height: 40PX;
+    }
+    .time_line_Swiper_content_wr {
+        margin-top: 60PX;
+    }
+    .time_line_Swiper_content_wr h2 {
+        font-size: 24PX;
+        width: 50%;
+    }
+    .time_line_Swiper_content_wr p {
+        font-size: 16PX;
+        width: 50%;
+    }
+    .work_in_rus_wrapper {
+        margin-top: 40PX;
+    }
+    .work_in_rus_wrapper_text {
+        font-size: 16PX;
+    }
+    .work_in_rus_map {
+        margin-left: 0;
+        margin-top: 40PX;
+    }
+    .work_in_rus_map span {
+        display: block;
+    }
+    .work_with_prom {
+        width: 540PX;
+        margin: 90PX auto -40PX auto;
+    }
+    .work_with_prom h2 {
+        width: 60%;
+    }
+    .work_with_prom_text p {
+        font-size: 20PX;
+        padding: 0;
+    }
 }
 /*360*/
 @media only screen and (max-width: 767px) {
-
+    .about_us_back_top {
+        width: 100%;
+        height: 600PX;
+        background: url("../img/about_us/about_back768.jpg") no-repeat;
+        background-position: 40% 100%;
+        margin: 0 auto;
+    }
+    .hist_screen {
+        display: block;
+        font-weight: 400;
+font-size: 16PX;
+line-height: 130%;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: #00d1ff;
+margin-top: 60PX;
+    }
+    .about_us_title_wripper_container h2 {
+        display: block;
+        margin-top: -90PX;
+        font-weight: 300;
+font-size: 20PX;
+line-height: 110%;
+padding: 0;
+    }
+    .about_us_title_wripper_container h1 {
+        font-weight: 300;
+font-size: 24PX;
+line-height: 110%;
+margin-top: 200PX;
+width: 100%;
+    }
+    .about_us_sub_title {
+        font-weight: 300;
+font-size: 16PX;
+line-height: 120%;
+width: 100%;
+margin-top: 0px;
+max-width: 350PX;
+    }
+    .about_us_title_wripper_container {
+        display: flex;
+        flex-direction: column;
+        margin: -400PX 0 0 0PX;
+        width: 100%;
+    }
+    .time_line_maket {
+        grid-template-columns: 16PX repeat(10, 33PX) 16PX;
+    }
+    .time_line_Swiper_content_wr span {
+        display: none;
+    }
+    .time_line_Swiper_content_wr {
+        display: flex;
+    }
+    .work_in_rus_wrapper span {
+        display: none;
+    }
+    .work_in_rus_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .work_with_prom {
+        flex-direction: column;
+    }
+    .time_line_swipper_wrapper {
+        margin-top: 40PX;
+    }
+    .time_line_item {
+        height: 20PX;
+    }
+    .time_line_item_center {
+        height: 40PX;
+    }
+    .time_line_Swiper_content_wr {
+        margin-top: 30PX;
+        flex-direction: column;
+        
+    }
+    .time_line_Swiper_content_wr h2 {
+        font-size: 24PX;
+        width: 100%;
+        padding-bottom: 20PX;
+    }
+    .time_line_Swiper_content_wr p {
+        font-size: 16PX;
+        width: 100%;
+    }
+    .work_in_rus_wrapper {
+        margin-top: 70PX;
+    }
+    .work_in_rus_wrapper_text {
+        font-size: 16PX;
+        width: 100%;
+    }
+    .work_in_rus_map {
+        margin-left: 0;
+        margin-top: 40PX;
+        width: 100%;
+    }
+    .work_in_rus_map span {
+        display: block;
+    }
+    .work_with_prom {
+        width: 100%;
+        margin: 60PX auto -40PX auto;
+    }
+    .work_with_prom h2 {
+        width: 100%;
+    }
+    .work_with_prom_text p {
+        font-size: 20PX;
+        padding: 0;
+    }
 }
