@@ -388,6 +388,8 @@ html,body{font-family:"Roboto Mono",sans-serif;color:#fff;background-color:#1B1B
 
 .footer_addr{margin-left:115px;margin-left:7.1875rem}
 
+.error_wraper{font-weight:400;font-size:16PX;color:#00d1ff;line-height:130%;letter-spacing:2.97em;text-transform:uppercase;text-align:center;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:100%}
+
 .about_us_back_top{width:100%;height:910PX;background:url("../img/about_us/about_back.jpg") no-repeat;background-position:40% 100%;object-fit:cover;position:relative}
 
 .about_us_title_wripper{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:100%}
