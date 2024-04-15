@@ -694,7 +694,7 @@ a .grid-item{text-decoration:none;color:#00A3C7}
 
 .container_catalog_item_wr:hover>.card_hover_img{animation:anim 2.5s forwards;width:100%;height:100%;object-fit:cover;position:absolute}
 
-.items{display:flex;flex-direction:row;flex-wrap:wrap;gap:15PX;justify-content:flex-start;column-count:5;margin-bottom:15PX}
+.items{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between;column-count:5;gap:14PX;margin-bottom:15PX}
 
 .items:last-child{justify-content:flex-start}
 
@@ -702,11 +702,13 @@ a .grid-item{text-decoration:none;color:#00A3C7}
 
 .hidden{opacity:0;visibility:hidden;max-height:0;transition:opacity 0.8s ease, visibility 0s 0.8s, max-height 0s 0.8s}
 
-.item{color:#00A3C7;text-decoration:none;width:19%;height:360PX;border:1px solid #00A3C7;border:0.0625rem solid #00A3C7;border-radius:2px;border-radius:0.125rem;opacity:1;transition:opacity 0.8s ease;font-weight:400;font-size:16PX;line-height:130%;letter-spacing:0.1em;text-transform:uppercase}
+.item{color:#00A3C7;text-decoration:none;width:264PX;height:360PX;border:1px solid #00A3C7;border:0.0625rem solid #00A3C7;border-radius:2px;border-radius:0.125rem;opacity:1;transition:opacity 0.8s ease;font-weight:400;font-size:16PX;line-height:130%;letter-spacing:0.1em;text-transform:uppercase}
 
-.x2{flex-basis:39%}
+.items::after{width:550PX;content:""}
 
-.x3{flex-basis:59%}
+.x2{width:550PX}
+
+.x3{width:830PX}
 
 .blue_card_catalog{background-color:#00A3C7;color:#1b1b1b}
 

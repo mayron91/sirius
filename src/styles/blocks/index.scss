@@ -274,9 +274,9 @@ text-decoration: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 15PX;
-  justify-content: flex-start;
+  justify-content: space-between;
   column-count: 5;
+  gap: 14PX;
   margin-bottom: 15PX;
 }
 .items:last-child {
@@ -295,7 +295,7 @@ text-decoration: none;
 .item {
   color: #00A3C7;
   text-decoration: none;
-  width: 19%;
+  width: 264PX;
   height: 360PX;
   border: 1px solid #00A3C7;
 border-radius: 2px;
@@ -307,11 +307,15 @@ line-height: 130%;
 letter-spacing: 0.1em;
 text-transform: uppercase;
 }
+.items::after {
+  width: 550PX;
+  content: "";
+}
 .x2 {
-  flex-basis: 39%;
+  width: 550PX;
 }
 .x3 {
-  flex-basis: 59%;
+ width: 830PX;
 }
 .blue_card_catalog {
   background-color: #00A3C7;
