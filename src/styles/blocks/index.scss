@@ -712,13 +712,18 @@ line-height: 110%;
 .swiper_container_right {
   width: 100%;
   padding-top: 40px;
-  grid-template-columns: repeat(2, 50%);
-  gap: 5px;
+  display: flex;
+  gap: 0;
+  margin-right: 0;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.swiper_container_right a {
+  width: 50%;
 }
 .normal_card {
   width: 100%;
   height: 240PX;
-  max-width: 180PX;
 }
 .swiper_wr {
   overflow: hidden;
@@ -726,7 +731,6 @@ line-height: 110%;
 .blue_card {
 width: 100%;
   height: 240PX;
-  max-width: 180PX;
 }
 .swiper_container {
   padding-top: 20px;
