@@ -712,20 +712,21 @@ line-height: 110%;
 .swiper_container_right {
   width: 100%;
   padding-top: 40px;
-  grid-template-columns: repeat(2, 160PX);
-  justify-items: center;
-  gap: 2px;
+  grid-template-columns: repeat(2, 50%);
+  gap: 5px;
 }
 .normal_card {
-  width: 160PX;
+  width: 100%;
   height: 240PX;
+  max-width: 180PX;
 }
 .swiper_wr {
   overflow: hidden;
 }
 .blue_card {
-  width: 160PX;
+width: 100%;
   height: 240PX;
+  max-width: 180PX;
 }
 .swiper_container {
   padding-top: 20px;
@@ -789,7 +790,8 @@ margin-bottom: 0;
   margin-bottom: 0px;
 }
 .items {
-  gap: 9PX;
+  gap: 10PX;
+  justify-content: space-between;
 }
 .item {
   height: 240PX;
@@ -803,7 +805,7 @@ margin-bottom: 0;
   
 }
 .x3 {
-  flex-basis: 98%;
+  flex-basis: 100%;
 }
 .x3>.container_catalog_item_wr>.card_img {
   width: 180PX;
